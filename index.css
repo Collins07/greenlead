@@ -62,11 +62,12 @@
   
   #logo{
      font-size: 24px;
+     margin-left: 10px;
  
   }
   #logo-img{
-   height: 51px;
-   width: 51px;
+   height: 48px;
+   width: 48px;
   }
  
  
@@ -200,6 +201,7 @@
   .releaf{
     color: green;
   }
+ 
 
   #title{
     text-decoration-line: underline ;
@@ -289,7 +291,7 @@
 
 /* Cards */
 #image1{
-  background-image: url('img/account.jpg');
+  background-image: url('img/CO2.jpg');
   background-size: cover;
 
 }
@@ -300,7 +302,7 @@
 
 }
 #image3{
-  background-image: url('img/carbon5.jpg');
+  background-image: url('img/green10.jpg');
   background-size: cover;
 
 }
@@ -464,7 +466,7 @@
   transition: all 0.3s ease;
 }
 .button input[type="button"]:hover{
-  background: #5029bc;
+  background: #29bc5a;
 }
 
 @media (max-width: 950px) {
@@ -542,7 +544,7 @@
 
 
 /* Media querries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   #nav-linking{
       margin-left: 0px;
       margin-top: 10%;
@@ -556,6 +558,9 @@
   }
   #hanging-icons{
     display: block;
+  }
+  html{
+    overflow-x: hidden;
   }
 
  
