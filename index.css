@@ -58,7 +58,7 @@
   }
 
    /* Media querries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   
   #logo{
      font-size: 24px;
@@ -353,6 +353,7 @@
 #tree{
   font-weight: bold;
   color: gray;
+  margin-left: 10px;
   text-decoration-style: 2px solid;
   text-decoration: 2px underline;
 }
@@ -369,7 +370,7 @@
 /* Contact form */
 
 #container{
-  width: 100%;
+  width: 70%;
   background: #fff;
   border-radius: 6px;
   padding: 20px 60px 30px 40px;
@@ -381,14 +382,14 @@
   justify-content: space-between;
 }
 #container .content .left-side{
-  width: 25%;
+  width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   margin-top: 15px;
-  position: relative;
+  
 }
 .content .left-side::before{
   content: '';
@@ -401,7 +402,8 @@
   background: #afafb6;
 }
 .content .left-side .details{
-  margin: 14px;
+  margin-left: 10%;
+  margin-top: 20px;
   text-align: center;
 }
 .content .left-side .details i{
@@ -416,55 +418,9 @@
 .content .left-side .details .text-one,
 .content .left-side .details .text-two{
   font-size: 14px;
-  color: #afafb6;
+  color: #323233;
 }
-#container .content .right-side{
-  width: 75%;
-  margin-left: 75px;
-}
-.content .right-side .topic-text{
-  font-size: 23px;
-  font-weight: 600;
-  color: green;
-}
-.right-side .input-box{
-  height: 50px;
-  width: 100%;
-  margin: 12px 0;
-}
-.right-side .input-box input,
-.right-side .input-box textarea{
-  height: 100%;
-  width: 100%;
-  border: none;
-  outline: none;
-  font-size: 16px;
-  background: #F0F1F8;
-  border-radius: 6px;
-  padding: 0 15px;
-  resize: none;
-}
-.right-side .message-box{
-  min-height: 110px;
-}
-.right-side .input-box textarea{
-  padding-top: 6px;
-}
-.right-side .button{
-  display: inline-block;
-  margin-top: 12px;
-}
-.right-side .button input[type="button"]{
-  color: #fff;
-  font-size: 18px;
-  outline: none;
-  border: none;
-  padding: 8px 16px;
-  border-radius: 6px;
-  background: green;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
+
 .button input[type="button"]:hover{
   background: #29bc5a;
 }

@@ -112,6 +112,7 @@ body {
   }
   #tree{
     font-weight: bold;
+    margin-left: 10px;
     color: gray;
     text-decoration-style: 2px solid;
     text-decoration: 2px underline;
@@ -547,15 +548,16 @@ body {
   }
 
     /* Media querries */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 700px) {
   
   #logo{
-    font-size: 23px;
+    font-size: 24px;
+    margin-left: 10px;
 
  }
  #logo-img{
-  height: 50px;
-  width: 50px;
+  height: 48px;
+  width: 48px;
  }
  
  
