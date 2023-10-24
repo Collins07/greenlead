@@ -140,7 +140,7 @@ body {
   # About Boxes
   --------------------------------------------------------------*/
   .about-boxes {
-    background: url("../img/share.jpg") center top no-repeat fixed;
+    background: url("../img/GL2.jpg") center top no-repeat fixed;
     background-size: cover;
     padding: 60px 0 30px 0;
     position: relative;
@@ -564,6 +564,9 @@ body {
    margin-left: 0;
  }
 }
+
+
+
 
 
   /*--------------------------------------------------------------
