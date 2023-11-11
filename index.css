@@ -368,6 +368,10 @@
 .root{
   color: green;
 }
+#esg{
+  font-size: 19px;
+ 
+}
 
 
 
@@ -438,8 +442,14 @@
    width: 75%;
    margin-left: 55px;
 }
+
 }
 @media (max-width: 700px) {
+  
+  #esg{
+    font-size: 16px;
+   
+  }
   #container{
     margin: 40px 0;
     margin-left: 5%;
