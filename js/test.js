@@ -16,14 +16,14 @@ sidebarBtn.onclick = function() {
 
 
 // Demo 1 of AEC methodology
-let count = 874000;
+let count = 1000000;
 const elementRead = document.querySelector('.read');
 const elementCarbon = document.querySelector('.carbon');
 const elementCredit = document.querySelector('.credit');
 
 function updateCounter1() {
-    if (count > 877000) {
-        count = 874000;
+    if (count > 1000500) {
+        count = 1000000;
     }
 
     elementRead.textContent = count;
@@ -42,14 +42,14 @@ setInterval(updateCounter1, 100);
 
 
 // Demo 2 of AEC methodology
-let count2 = 0; // Start with a different initial count
+let count2 = 10; // Start with a different initial count
 const elementRead2 = document.getElementById('read');
 const elementCarbon2 = document.getElementById('carbon');
 const elementCredit2 = document.getElementById('credit');
 
 function updateCounter2() {
-    if (count2 > 700) {
-        count2 = 0; // Reset the count if it exceeds 200,000
+    if (count2 > 200) {
+        count2 = 10; // Reset the count if it exceeds 200,000
     }
 
     elementRead2.textContent = count2;

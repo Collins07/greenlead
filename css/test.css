@@ -318,6 +318,9 @@ nav .sidebar-button i{
     display: none;
    
   }
+  #esg-reports{
+    display: inline-block;
+  }
   
   .sidebar.active{
     display: block;
@@ -338,6 +341,11 @@ nav .sidebar-button i{
 
 
 @media (max-width: 700px) {
+
+  #demo2Chart{
+    width: 200px;
+    height: 700px;
+  }
   .sidebar{
     width: 0;
     display: none;
