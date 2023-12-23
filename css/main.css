@@ -334,7 +334,13 @@ nav .sidebar-button i{
 
 }
 
-
+/* CSS for carbon projects section */
+@media (max-width: 700px) {
+  #carbon-project-card{
+    width: 300px;
+    margin-top: 4%;
+  }
+}
 
 @media (max-width: 700px) {
   .sidebar{
