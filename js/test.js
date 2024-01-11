@@ -30,7 +30,7 @@ function updateCounter1() {
     const calculatedValue = (count / 10) * 0.0045;
     elementCarbon.textContent = calculatedValue.toFixed(3);
     
-    const creditValue = calculatedValue * 5;
+    const creditValue = calculatedValue * 8;
     elementCredit.textContent = creditValue.toFixed(3);
     
     count++;
