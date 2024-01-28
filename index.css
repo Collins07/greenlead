@@ -78,6 +78,24 @@
   overflow-x: hidden;
  }
 
+ /* Video */
+ video {
+  width: 540px;
+  height: 360px;
+  outline: none; /* Remove border on focus (for Firefox) */
+}
+
+video::-webkit-media-controls-panel {
+  display: none !important; /* Hide controls on hover for WebKit browsers (e.g., Chrome, Safari) */
+}
+@media only screen and (max-width: 767px) {
+  video {
+      width: 370px; /* Make the video fill the width of the screen */
+      height: 200px; /* Maintain the video's aspect ratio */
+      margin-top: 5%;
+  }
+}
+
  /*--------------------------------------------------------------
 # Facts
 --------------------------------------------------------------*/
