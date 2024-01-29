@@ -143,6 +143,238 @@ video::-webkit-media-controls-panel {
 
 
 
+/* How it works */
+
+
+section.how-it-works {
+  position: relative;
+}
+
+section.how-it-works .section-heading p {
+  padding: 0px 60px;
+}
+
+
+section.how-it-works .naccs {
+  position: relative;
+}
+
+section.how-it-works .naccs .menu div {
+  padding: 10px 20px;
+  text-align: center;
+  border-radius: 5px !important;
+  margin-bottom: 40px;
+  font-size: 20px;
+  color: #111;
+  background-color: #fff;
+  cursor: pointer;
+  vertical-align: middle;
+  font-weight: 900;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  border: 3px solid rgb(2, 83, 2);
+}
+
+section.how-it-works .naccs .menu div.active {
+  color: green;
+  border: 3px solid green;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+}
+
+section.how-it-works ul.nacc {
+  margin-left: 50px !important;
+  position: relative;
+  min-height: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  transition: 0.5s all cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+section.how-it-works ul.nacc li {
+  background-color: #fff;
+  overflow: hidden;
+  opacity: 0;
+  transform: translateX(50px);
+  position: absolute;
+  list-style: none;
+  transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
+  border-radius: 15px;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.05);
+  padding-right: 50px;
+}
+
+section.how-it-works ul.nacc li .left-image {
+  position: absolute;
+  margin-right: 50px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+section.how-it-works ul.nacc li .left-image img {
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+}
+
+section.how-it-works ul.nacc li .left-image .price h6 {
+  position: absolute;
+  background: green;
+  background: linear-gradient(-145deg, green 0%, green 100%);
+  color: #fff;
+  top: 20px;
+  left: 20px;
+  font-size: 20px;
+  font-weight: 700;
+  width: 50px;
+  height: 50px;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  line-height: 50px;
+}
+
+section.how-it-works ul.nacc li .right-content {
+  padding: 40px 0px;
+  margin-left: 350px;
+}
+
+section.how-it-works ul.nacc li .right-content h4 {
+  font-size: 20px;
+  color: #111;
+  margin-bottom: 25px;
+  font-weight: 800;
+}
+
+section.how-it-works ul.nacc li .right-content ul {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+section.how-it-works ul.nacc li .right-content span {
+  font-size: 14px;
+  font-weight: 600;
+  margin-right: 30px;
+  padding-right: 30px;
+  border-right: 2px solid #111;
+}
+
+section.how-it-works ul.nacc li .right-content .last-span {
+  margin-right: 0px;
+  padding-right: 0px;
+  border-right: none;
+}
+
+section.how-it-works ul.nacc li .right-content p {
+  margin-bottom: 20px;
+}
+
+section.how-it-works ul.nacc li .right-content .text-button {
+  margin-top: 20px;
+}
+
+section.how-it-works ul.nacc li.active {
+  position: relative;
+  transition-delay: 0.3s;
+  z-index: 2;
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+section.how-it-works ul.nacc li p {
+  margin: 0;
+}
+
+.text-button{
+  font-weight: bold;
+}
+.text-button a{
+  color: #008000;
+  font-weight: bold;
+  font-size: 23px;
+}
+
+/* Responsive Styles for Smaller Screens */
+@media (max-width: 767px) {
+  section.how-it-works .naccs .menu div {
+    font-size: 16px; /* Adjust font size for smaller screens */
+  }
+
+  section.how-it-works ul.nacc {
+    margin-left: 0 !important; /* Adjust margin for smaller screens */
+  }
+
+  section.how-it-works ul.nacc li {
+    width: 100%; /* Make each tab full width on smaller screens */
+    margin-right: 0; /* Remove margin on smaller screens */
+  }
+
+  section.how-it-works ul.nacc li .right-content {
+    margin-left: 0; /* Remove margin on smaller screens */
+  }
+  .left-image{
+    display: none;
+  }
+}
+
+
+
+/* Impact scores */
+
+.fun-facts {
+  position: relative;
+  padding: 60px 0px 60px 0px;
+  overflow: hidden;
+}
+
+.fun-facts:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 95%;
+  height: 100%;
+  background-color: rgb(71, 155, 71);
+  content: '';
+  border-top-right-radius: 500px;
+  border-bottom-right-radius: 500px;
+}
+
+.fun-facts:after {
+  position: absolute;
+  left: 15%;
+  opacity: 0.5;
+  top: 0;
+  width: 318px;
+  height: 119px;
+  content: '';
+  z-index: 2;
+}
+
+.fun-facts .counter {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.fun-facts h2 {
+  color: #fff;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.fun-facts h2::after {
+  content: '+';
+  margin-left: 5px;
+}
+
+.fun-facts p {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+
+
 
 
 
