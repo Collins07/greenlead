@@ -194,7 +194,7 @@ section.how-it-works ul.nacc li {
   background-color: #fff;
   overflow: hidden;
   opacity: 0;
-  transform: translateX(50px);
+  transform: translateX(0px);
   position: absolute;
   list-style: none;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -543,41 +543,6 @@ section.how-it-works ul.nacc li p {
 }
 
 
-/* Cards */
-#image1{
-  background-image: url('img/CO2.jpg');
-  background-size: cover;
-
-}
-
-#image2{
-  background-image: url('img/responsible1.jpg');
-  background-size: cover;
-
-}
-#image3{
-  background-image: url('img/green10.jpg');
-  background-size: cover;
-
-}
-#image4{
-  background-image: url('img/kids.jpg');
-  background-size: cover;
-  
-
-}
-#image5{
-  background-image: url('img/restore.jpg');
-  background-size: cover;
-
-}
-#text1{
-  color: white;
-  font-size: 33px;
-}
-#reforest{
-  text-align: center;
-}
 
 
 
@@ -614,7 +579,7 @@ section.how-it-works ul.nacc li p {
 
 
 
-/* Routes to roots */
+/* Routes to sustainability */
 .root{
   color: green;
 }
@@ -625,7 +590,9 @@ section.how-it-works ul.nacc li p {
 
 
 
-/* Contact form */
+/* -----------------------
+ #Contact form 
+------------------------*/
 
 #container{
   width: 70%;
