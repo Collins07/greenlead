@@ -1,0 +1,35 @@
+.card-registration .select-input.form-control[readonly]:not([disabled]) {
+	font-size: 1rem;
+	line-height: 2.15;
+	padding-left: .75em;
+	padding-right: .75em;
+	}
+.card-registration .select-arrow {
+	top: 13px;
+	}
+
+#box{
+	box-shadow: rgb(2, 61, 2) 0px 22px 70px 4px;
+}
+.releaf{
+	color: green;
+	font-size: 40px;
+}
+.log{
+	margin-left: 15%;
+	margin-top: 2%;
+	font-weight: bold;
+	text-decoration: none;
+}	
+
+
+
+/* More information */
+
+#toggle-password{
+	color: green;
+	margin-left: 2%;
+	font-weight: bold;
+	cursor: pointer;
+	margin-top: 2%;
+}

@@ -194,7 +194,6 @@ section.how-it-works ul.nacc li {
   background-color: #fff;
   overflow: hidden;
   opacity: 0;
-  transform: translateX(0px);
   position: absolute;
   list-style: none;
   transition: 1s all cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -233,7 +232,7 @@ section.how-it-works ul.nacc li .left-image .price h6 {
 }
 
 section.how-it-works ul.nacc li .right-content {
-  padding: 40px 0px;
+  padding: 40px 30px;
   margin-left: 350px;
 }
 

@@ -318,6 +318,7 @@ body {
    ----------------------------*/
 
 
+
 #image1{
   background-image: url('../img/CO2.jpg');
   background-size: cover;
@@ -353,7 +354,11 @@ body {
   text-align: center;
 }
 
-  
+  @media (max-width: 900px) {
+    #image-cards-title {
+      margin-top: 10%;
+    }
+  }
   
 
 
