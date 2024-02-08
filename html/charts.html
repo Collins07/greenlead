@@ -140,30 +140,213 @@
 
               
                   <div class="row">
-                      <div id="export-csv" class="col-md-8 d-flex justify-content-between">
-                            <div id="export-csv" class="col-md-6">
-                              <a href="#" class="btn btn-sm btn-success btn-rounded">Export CSV</a>
-                          </div>
-                          <div id="export-csv" class="col-md-6">
-                              <a href="#" class="btn btn-sm btn-danger btn-rounded">Export PDF</a>
+                    <div id="export-csv" class="col-md-8 d-flex justify-content-between">
+                        <div id="export-csv" class="col-md-3">
+                            <a href="#" class="btn btn-sm btn-success btn-rounded">Export CSV</a>
+                        </div>
+                         <!-- button to start reporting -->
+                        <div id="start-report" class="col-md-3">
+                            <a id="report-btn" href="#" class="btn btn-sm btn-danger btn-rounded">Report</a>
+                        </div>
+                        <div id="export-csv" class="col-md-3">
+                          <!-- Button trigger modal -->
+                          <button type="button" class="btn btn-sm btn-primary mb-2" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                            Demo
+                          </button>
+
+                          <!-- Modal -->
+                          <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                              <div class="modal-content">
+                                <div class="modal-header">
+                                  <h1 class="modal-title fs-5 fw-bold" id="staticBackdropLabel">Premium Subscriptions</h1>
+                                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                  <ul>
+                                    <li>Download data in CSV and PDF formats</li>
+                                    <li>Enhanced Analytics using our machine learning models</li>
+                                    <li>Compare with industry players</li>
+                                    <li>Consultation Services</li>
+                                  </ul>
+                                </div>
+                                <div class="modal-footer">
+                                  <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+                                  <a href="https://forms.gle/XpU1LomwpAjQWTNE8" target="_blank" class="btn btn-sm btn-success btn-rounded">Book Demo</a>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                       </div>
-                      <div class="col-md-4">
-              
-              
-                          <div id="search-input" class="form-group mb-3 ">
-                              <input type="text" id="searchField" class="form-control" placeholder="Search">
-                          </div>
-              
-                      </div>
-                  </div>
-              
-              
-                
-                  <h5 class="fw-bold">Basi Go Ltd.</h5>
+                    </div>
+                    <div class="col-md-4">
+            
+            
+                        <div id="search-input" class="form-group mb-3 ">
+                            <input type="text" id="searchField" class="form-control" placeholder="Search">
+                        </div>
+            
+                    </div>
+                </div>
+
+
+
+                  <!-- data content start-->
                   <div class="overview-boxes">
 
+                    <div class="box" id="report-form" style="display: none;">
+                      <div class="right-side">
+                        
+                        <form id="data-form">
+                          <!-- Section 1: Introduction -->
+                          <div id="section1" class="section">
+                            <h2>Introduction</h2>
+                            <label class="mt-2 fw-bold" for="date">Date:</label>
+                            <input class="mt-2" type="date" id="date" name="date" required><br>
+                            
+                            <label class="mt-2 fw-bold" for="industry">Industry Category:</label>
+                            <select class="mt-2" id="industry" name="industry" required>
+                              <option value="transport">Transport</option>
+                              <option value="finance">Finance</option>
+                              <option value="manufacturing">Manufacturing</option>
+                            </select><br>
+                            
+                            <label class="mt-2 fw-bold" for="company">Company Name:</label>
+                            <input type="text" id="company" name="company" required><br>
+                            
+                            <label class="mt-2 fw-bold" for="land-use">Land Use (hectares):</label>
+                            <input type="number" id="land-use" name="land-use" required><br>
+                            
+                            <label class="mt-2 fw-bold" for="compliance">Environmental Compliance:</label>
+                            <select class="mt-2" id="compliance" name="compliance" required>
+                              <option value="compliant">Compliant</option>
+                              <option value="non-compliant">Non-compliant</option>
+                            </select><br>
+                            
+                            <textarea class="mt-2" id="non-compliance-description" name="non-compliance-description" placeholder="Describe any non-compliance issues"></textarea><br>
+                            
+                            <button  class="next-btn mt-2  btn btn-success rounded-pill" type="button">Next</button>
+                            <button class="prev-btn mt-2 btn btn-secondary rounded-pill" type="button">Previous</button>
+                          </div>
+  
+                    
+                          <!-- Section 2: Number of Vehicles -->
+                          <div id="section2" class="section">
+                            <h2>Number of Vehicles</h2>
+                            <!-- Input fields for total number of vehicles, fossil-fuel cars, electric vehicles -->
+                            <label class="mt-2 fw-bold" for="total-vehicles">Total Number of Vehicles:</label>
+                            <input class="mt-2" type="number" id="total-vehicles" name="total-vehicles" required><br>
+                            
+                            <label class="mt-2 fw-bold" for="fossil-cars">Number of Fossil-fuel Cars:</label>
+                            <input class="mt-2" type="number" id="fossil-cars" name="fossil-cars" required><br>
+                            
+                            <label class="mt-2 fw-bold" for="electric-vehicles">Number of Electric Vehicles:</label>
+                            <input class="mt-2" type="number" id="electric-vehicles" name="electric-vehicles" required><br>
+                            
+                            <button  class="next-btn mt-2  btn btn-success rounded-pill" type="button">Next</button>
+                            <button class="prev-btn mt-2 btn btn-secondary rounded-pill" type="button">Previous</button>
+                          </div>
+                    
+                          <!-- Section 3: Source of Energy and Water -->
+                          <div id="section3" class="section">
+                            <h2>Source of Energy and Water</h2>
+                            <!-- Input fields for energy sources, water sources, consumption, etc. -->
+                            <label class="mt-2 fw-bold" for="energy-source1">Source of Energy 1:</label>
+                            <select class="mt-2" id="energy-source1" name="energy-source1" required>
+                              <option value="non-renewable">Non-renewable</option>
+                              <option value="renewable">Renewable</option>
+                              
+                            </select><br>
+                            
+                            <label class="mt-2 fw-bold" for="energy-consumption1">Amount of Energy Consumption from Source 1 (Kwh):</label>
+                            <input class="mt-2" type="number" id="energy-consumption1" name="energy-consumption1" required><br>
+                            
+                            <label class="mt-2 fw-bold" for="energy-source2">Source of Energy 2:</label>
+                            <select class="mt-2" id="energy-source2" name="energy-source2" required>
+                              <option value="non-renewable">Non-renewable</option>
+                              <option value="renewable">Renewable</option>
+                              
+                            </select><br>
+                            
+                            <label class="mt-2 fw-bold" for="energy-consumption2">Amount of Energy Consumption from Source 2 (Kwh):</label>
+                            <input type="number" id="energy-consumption2" name="energy-consumption2" required><br>
+                            
+                            <label class="mt-2 fw-bold" for="water-source1">Source of Water 1:</label>
+                            <select class="mt-2" id="water-source1" name="water-source1" required>
+                              <option value="borehole">Borehole</option>
+                              <option value="river">River</option>
+                            </select><br>
+                            
+                            <label class="mt-2 fw-bold" for="water-consumption1">Total Water Consumption 1 (cubic metres):</label>
+                            <input type="number" id="water-consumption1" name="water-consumption1" required><br>
+                            
+                            <label class="mt-2 fw-bold" for="water-source2">Source of Water 2:</label>
+                            <select class="mt-2" id="water-source2" name="water-source2" required>
+                              <option value="borehole">Borehole</option>
+                              <option value="river">River</option>
+                            </select><br>
+                            
+                            <label class="mt-2 fw-bold" for="water-consumption2">Total Water Consumption 2 (cubic metres):</label>
+                            <input class="mt-2" type="number" id="water-consumption2" name="water-consumption2" required><br>
+                            
+                            <button  class="next-btn mt-2  btn btn-success rounded-pill" type="button">Next</button>
+                            <button class="prev-btn mt-2 btn btn-secondary rounded-pill" type="button">Previous</button>
+                          </div>
+                    
+                          <!-- Section 4: Waste Materials -->
+                          <div id="section4" class="section">
+                            <h2>Waste Materials</h2>
+                            <!-- Input fields for waste types, amounts, etc. -->
+                            <label class="mt-2 fw-bold" for="waste-type1">Type of Waste 1:</label>
+                            <select class="mt-2" id="waste-type1" name="waste-type1" required>
+                              <option value="biodegradable">Biodegradable</option>
+                              <option value="non-biodegradable">Non-biodegradable</option>
+                            </select><br>
+                            
+                            <label class="mt-2 fw-bold" for="waste-amount1">Amount of Waste 1 (metric tonnes):</label>
+                            <input type="number" id="waste-amount1" name="waste-amount1" required><br>
+                            
+                            <label class="mt-2 fw-bold" for="waste-type2">Type of Waste 2:</label>
+                            <select class="mt-2" id="waste-type2" name="waste-type2" required>
+                              <option value="biodegradable">Biodegradable</option>
+                              <option value="non-biodegradable">Non-biodegradable</option>
+                            </select><br>
+                            
+                            <label class="mt-2 fw-bold" for="waste-amount2">Amount of Waste 2 (metric tonnes):</label>
+                            <input class="mt-2" type="number" id="waste-amount2" name="waste-amount2" required><br>
+                            
+                            <button class="mt-2 mt-2  btn btn-success" id="submit-btn" type="button">Submit</button>
+                            <button class="prev-btn mt-2 btn btn-secondary rounded-pill" type="button">Previous</button>
+                           
+                          </div>
+                        </form>
+
+                        <div class="container">
+                     
+                  
+                          <!-- Progress Bar -->
+                          <div  class="progress">
+                            <div class="progress-bar" id="progress-bar"></div>
+                          </div>
+                        </div>
+                        
+                      </div>
+                    </div>
+
+              
+                    <div class="container mt-3">
+                      <div class="row">
+                        <div id="non-graphical-data"></div>
+
+                          <div class="col-md-4"><canvas id="barChart" width="200" height="150"></canvas></div>
+                          <div class="col-md-4"><canvas id="pieChart" width="200" height="150">></canvas></div>
+                          <div class="col-md-4"><canvas id="barChartWater" width="200" height="150">></canvas></div>
+                      </div>
+                    </div>
+
                   </div>
+
+                  <!-- data content end -->
 
               </div>
                 
@@ -185,9 +368,10 @@
     
     
 
-      <script src="../js/main.js"></script>
+      <script src="../js/charts.js"></script>
    
-      <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
 
   </body>

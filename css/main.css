@@ -160,7 +160,7 @@ nav .sidebar-button i{
   display: flex;
   align-items: start;
   justify-content: start;
-  width: calc(100% / 4 - 15px);
+
   background: #fff;
   padding: 15px 14px;
   border-radius: 12px;
@@ -536,4 +536,29 @@ nav .sidebar-button i{
 
      
 
+  }
+
+
+
+
+  /* CSS for chart section */
+
+  .section {
+    display: none;
+  }
+  
+  .progress {
+    margin-top: 20px;
+    
+  }
+  
+  .progress-bar {
+    width: 0%;
+    height: 20px;
+    background-color: #4CAF50;
+  }
+
+  #home{
+    margin-left: 10%;
+    margin-top: 10px;
   }
